@@ -1,16 +1,18 @@
 import React, { Component } from "react";
+import FullHeight from "react-full-height";
 import 'whatwg-fetch';
 
 
 const containerStyle = {
 width : '100%',
-height : '735px',
-overflowY: 'hidden',
+margin: '0px',
+padding: '0px',
+overflowX: 'hidden',
 backgroundImage : 'linear-gradient(180deg,#6978E9,#6D04A6)',
 }
 
 
-class Home extends Component {
+class Login extends Component {
 
 
 
@@ -62,7 +64,7 @@ render() {
 
     return (
      
-        <div style={containerStyle} className="no-gutter">
+        <FullHeight style={containerStyle} className="no-gutter">
           <div className="row">
             <div className="col-xl-12">
               <div className="Friends text-center" style={loginBox}>
@@ -79,10 +81,10 @@ render() {
               </div>
             </div>
           </div>
-        </div>
+        </FullHeight>
     );
   }
 
 }
 
-export default Home;
+export default Login;

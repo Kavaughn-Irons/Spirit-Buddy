@@ -16,10 +16,12 @@
     "nodemon": "^2.0.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-full-height": "^1.2.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.1.1",
     "whatwg-fetch": "^3.0.0"
-  },"proxy": "http://localhost:5000",
+  },
+  "proxy": "http://localhost:5000",
   "scripts": {
     "start": "concurrently \"npm run server\" \"react-scripts start\" ",
     "server": "nodemon server.js",
