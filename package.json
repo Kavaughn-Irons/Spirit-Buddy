@@ -14,6 +14,7 @@
     "morgan": "^1.9.1",
     "mysql": "^2.18.0",
     "nodemon": "^2.0.2",
+    "progressbar.js": "^1.1.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-full-height": "^1.2.1",
