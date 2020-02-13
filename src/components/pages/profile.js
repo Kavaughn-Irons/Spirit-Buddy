@@ -394,13 +394,13 @@ render() {
 
                   <div className="row"> 
                       <div style={{verticalAlign: 'middle'}} className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                          <h6 style={commonalitiesThresholdText}> Polls Created Threshold: 2,000,000 (Yours)</h6>
+                          <h6 style={commonalitiesThresholdText}> Polls Answered Threshold: 2,000,000 (Yours)</h6>
                           <div style={{position: 'relative', width: '170px',height: '170px', margin: 'auto'}} ref={this.pollsRef}></div>
                           <h5 style={commonalitiesThresholdBoolText}> Not Met</h5>
                       </div>
 
                       <div style={{verticalAlign: 'middle'}} className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                          <h6 style={commonalitiesThresholdText}> Polls Created Threshold: 2,000,000 (Theirs)</h6>
+                          <h6 style={commonalitiesThresholdText}> Polls Answered Threshold: 2,000,000 (Theirs)</h6>
                           <div style={{position: 'relative', width: '170px',height: '170px', margin: 'auto'}} ref={this.pollsRefTwo}></div>
                           <h5 style={commonalitiesThresholdBoolText}> Not Met</h5>
                       </div>
