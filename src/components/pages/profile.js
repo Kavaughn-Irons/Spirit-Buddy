@@ -89,13 +89,13 @@ fetch('http://localhost:5000/api/test', {
 
 calcheight(){
 
-  if(window.screen.width < 490){
+  if(window.screen.width < 576){
 
   this.setState({height: 2700})
 
   }else{
 
-  this.setState({height: 2050})
+  this.setState({height: 2150})
 
   }
 
@@ -394,13 +394,15 @@ render() {
 
                   <div className="row"> 
                       <div style={{verticalAlign: 'middle'}} className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                          <h6 style={commonalitiesThresholdText}> Polls Answered Threshold: 2,000,000 (Yours)</h6>
+                          <h5>(You Set)</h5>
+                          <h6 style={commonalitiesThresholdText}> Polls Answered Threshold: 2,000,000</h6>
                           <div style={{position: 'relative', width: '170px',height: '170px', margin: 'auto'}} ref={this.pollsRef}></div>
                           <h5 style={commonalitiesThresholdBoolText}> Not Met</h5>
                       </div>
 
                       <div style={{verticalAlign: 'middle'}} className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                          <h6 style={commonalitiesThresholdText}> Polls Answered Threshold: 2,000,000 (Theirs)</h6>
+                          <h5>(They Set)</h5>
+                          <h6 style={commonalitiesThresholdText}> Polls Answered Threshold: 2,000,000</h6>
                           <div style={{position: 'relative', width: '170px',height: '170px', margin: 'auto'}} ref={this.pollsRefTwo}></div>
                           <h5 style={commonalitiesThresholdBoolText}> Not Met</h5>
                       </div>
@@ -412,13 +414,15 @@ render() {
                   <div className="row">
                     
                     <div style={{verticalAlign: 'middle'}} className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                      <h6 style={messageThresholdText}> Messages Sent Threshold: 2,000 (Yours)</h6>
+                      <h5>(You Set)</h5>
+                      <h6 style={messageThresholdText}> Messages Sent Threshold: 2,000</h6>
                       <div style={{position: 'relative', width: '170px',height: '170px', margin: 'auto', verticalAlign: 'middle'}} ref={this.messagesRef}></div>
                       <h5 style={messageThresholdBoolText}> Not Met</h5>
                     </div>
 
                     <div style={{verticalAlign: 'middle'}} className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                      <h6 style={messageThresholdText}> Messages Sent Threshold: 2,000 (Theirs)</h6>
+                       <h5>(They Set)</h5>
+                      <h6 style={messageThresholdText}> Messages Sent Threshold: 2,000</h6>
                       <div style={{position: 'relative', width: '170px',height: '170px', margin: 'auto', verticalAlign: 'middle'}} ref={this.messagesRefTwo}></div>
                       <h5 style={messageThresholdBoolText}> Not Met</h5>
                     </div>
@@ -430,12 +434,14 @@ render() {
 
                   <div className="row"> 
                     <div style={{verticalAlign: 'middle'}} className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                        <h6 style={commonalitiesThresholdText}> Message Response Time (Yours)</h6>
+                        <h5>(You Set)</h5>
+                        <h6 style={commonalitiesThresholdText}> Message Response Time</h6>
                         <div style={{position: 'relative', width: '170px',height: '170px', margin: 'auto'}} ref={this.mrtgRef}></div>
                     </div>
 
                     <div style={{verticalAlign: 'middle'}} className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                        <h6 style={commonalitiesThresholdText}> Message Response Time (Theirs)</h6>
+                        <h5>(They Set)</h5>
+                        <h6 style={commonalitiesThresholdText}> Message Response Time</h6>
                         <div style={{position: 'relative', width: '170px',height: '170px', margin: 'auto'}} ref={this.mrtgRefTwo}></div>
                     </div>
 
