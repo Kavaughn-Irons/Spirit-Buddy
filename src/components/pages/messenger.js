@@ -67,13 +67,24 @@ render() {
       margin: '0px',
       padding: '0px',
       overflowX: 'hidden',
+      overflowY: 'hidden',
       backgroundImage : 'linear-gradient(180deg,#6978E9,#6D04A6)',
     }
+
+    let middleContainer = width => {if(width < 490){return '100%'}else{return '490px'}  }
+
 
     return (
      
         <FullHeight style={containerStyle} className="no-gutter">
-        
+
+          <div className="row">
+
+            <div className="col-xl-12">
+              <div style={{backgroundColor: 'white', width: middleContainer(window.screen.width),height: window.screen.height, margin: 'auto'}}></div>
+            </div>
+
+          </div>
         </FullHeight>
     );
   }
