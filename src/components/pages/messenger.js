@@ -73,6 +73,8 @@ render() {
 
     let middleContainer = width => {if(width < 490){return '100%'}else{return '490px'}  }
 
+    let textboxFooter = {height: '150px', width: middleContainer(window.screen.width), backgroundColor: 'green', bottom: '0', position: 'fixed'}
+
 
     return (
      
@@ -81,10 +83,15 @@ render() {
           <div className="row">
 
             <div className="col-xl-12">
-              <div style={{backgroundColor: 'white', width: middleContainer(window.screen.width),height: window.screen.height, margin: 'auto'}}></div>
+              <div style={{backgroundColor: 'white', width: middleContainer(window.screen.width),height: window.screen.height, margin: 'auto'}}>
+                <div style={textboxFooter}></div>
+              </div>
             </div>
 
           </div>
+
+          
+
         </FullHeight>
     );
   }
