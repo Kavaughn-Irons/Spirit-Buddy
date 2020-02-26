@@ -75,7 +75,8 @@ render() {
     let middleContainer = width => {if(width < 490){return '100%'}else{return '490px'}  }
     let divider = {borderBottom : '1px solid #0B1EAC', width : '96%', margin : 'auto', marginTop: '15px', marginBottom: '15px'}
     let Header = {paddingTop: '30px', marginBottom: '30px'}
-    let BirthdaySettingBox = {width: '250px', margin: 'auto'}
+    let birthdayHeader = {marginBottom: '10px', fontSize: '20px'}
+    let birthdaySettingBox = {width: '250px', margin: 'auto'}
     let textBox = (widthVar = '250px') => {return {width : widthVar, marginBottom : '30px',border : 'none', borderBottom : '2px solid #6978E9'}}
     let submitBox = {width : '250px', height : '50px', border : 'none', color : 'white',backgroundImage : 'linear-gradient(180deg,#B65DE7,#0B1EAC)', borderRadius: '3px', marginTop : '30px'}
     let settingsLabel = paddingAmount => { return {paddingRight : paddingAmount}}
@@ -98,22 +99,24 @@ render() {
                     <div style={settingsLabel(177)}>Last Name</div> 
                     <input type="text" name="lastname" style={textBox()}></input>
                     
-                    <div style={BirthdaySettingBox} className="no-gutter text-center">
+                    <div style={birthdaySettingBox} className="no-gutter text-center">
+
+                      <div style={birthdayHeader}>Birthday</div>
 
                       <div className="row">
                         <div className="col-4">
-                        <div style={settingsLabel(220)}>Age</div> 
-                        <input type="number" name="age" style={textBox('50px')}></input>
+                        <div style={settingsLabel(220)} className="text-center">Month</div> 
+                        <input type="number" name="age" style={textBox('60px')}></input>
                         </div>
 
                         <div className="col-4">
-                        <div style={settingsLabel(220)}>Age</div> 
-                        <input type="number" name="age" style={textBox('50px')}></input>
+                        <div style={settingsLabel(220)}>Day</div> 
+                        <input type="number" name="age" style={textBox('60px')}></input>
                         </div>
 
                         <div className="col-4">
-                        <div style={settingsLabel(220)}>Age</div> 
-                        <input type="number" name="age" style={textBox('50px')}></input>
+                        <div style={settingsLabel(220)}>Year</div> 
+                        <input type="number" name="age" style={textBox('60px')}></input>
                         </div>
                       </div>
 
