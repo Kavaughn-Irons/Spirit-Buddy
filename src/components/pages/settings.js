@@ -97,34 +97,9 @@ render() {
                     <div style={settingsLabel(177)}>First Name</div> 
                     <input type="text" name="firstname" style={textBox()}></input>
                     <div style={settingsLabel(177)}>Last Name</div> 
-                    <input type="text" name="lastname" style={textBox()}></input>
-                    
-                    <div style={birthdaySettingBox} className="no-gutter text-center">
-
-                      <div style={birthdayHeader}>Birthday</div>
-
-                      <div className="row">
-                        <div className="col-4">
-                        <div style={settingsLabel(220)} className="text-center">Month</div> 
-                        <input type="number" name="age" style={textBox('60px')}></input>
-                        </div>
-
-                        <div className="col-4">
-                        <div style={settingsLabel(220)}>Day</div> 
-                        <input type="number" name="age" style={textBox('60px')}></input>
-                        </div>
-
-                        <div className="col-4">
-                        <div style={settingsLabel(220)}>Year</div> 
-                        <input type="number" name="age" style={textBox('60px')}></input>
-                        </div>
-                      </div>
-
-                    </div>
-                    
-
-                    
-                    
+                    <input type="text" name="lastname" style={textBox()}></input>                    
+                    <div style={settingsLabel(195)}>Birthday</div> 
+                    <input type="date" name="lastname" style={textBox()}></input> 
                     <div style={settingsLabel(225)}>Job</div> 
                     <input type="text" name="job" style={textBox()}></input>
                     <div style={settingsLabel(200)}>School</div> 
